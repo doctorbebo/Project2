@@ -20,7 +20,8 @@ html {
     line-height: 60px; /* Vertically center the text there */
     background-color:   #666666;
     text-align: center;
-    padding: 20px;
+    padding: 14px;
+    border-top:  6px solid teal;
   }
   .center
   {
@@ -31,3 +32,43 @@ html {
   {
     background-image: url("../images/background.png");
   }
+  .float-right
+  {
+    float: right;
+    width: 100%;
+  }
+  .wrapper
+  {
+    margin: 0 auto;
+    width: 90%;
+  }
+  .margin-center
+  {
+    margin: 0 auto;
+  }
+  .header-name
+  {
+    height: 100%;
+    background-color: teal;
+  }
+  .button
+  {
+    background-color: teal;
+    border: 1px solid black;
+  }
+  h1
+  {
+    color: teal;
+  }
+  .img-text
+{
+    background-color: #4aaaa5;
+    position: absolute;
+    padding: 5% 5%;
+    width: 200px;
+    bottom: 25px;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Small App</title>
+</head>
+<script>
+var welcome = "Welcome User!";
+determineOS()
+alert(welcome);
+navigator.geolocation.getCurrentPosition(redirectuser);
+
+function determineOS()
+{
+    if(navigator.platform.startsWith("Win"))
+    {
+        welcome = "Welcome Windows User!"
+    }else if(navigator.platform.startsWith("Mac"))
+    {
+        welcome = "Welcome Mac User!";
+    }
+}
+
+function redirectuser(pos)
+{
+  console.log(pos.coords.latitude);   
+}
+
+</script>
+<body>
+    
+</body>
+</html>
